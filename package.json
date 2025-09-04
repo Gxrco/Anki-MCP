@@ -1,0 +1,36 @@
+{
+  "name": "mcp-anki",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "MCP server for managing Anki-style flashcards with spaced repetition scheduling",
+  "main": "./dist/cli.js",
+  "bin": {
+    "mcp-anki": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "cp -r src/* dist/",
+    "start": "node dist/cli.js",
+    "dev": "node src/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "anki",
+    "flashcards",
+    "spaced-repetition",
+    "mcp",
+    "memory",
+    "learning"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "sqlite3": "^5.1.6",
+    "csv-parse": "^5.5.2",
+    "marked": "^9.1.6",
+    "sanitize-html": "^2.11.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
