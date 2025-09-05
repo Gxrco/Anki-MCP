@@ -83,8 +83,8 @@ export class MigrationRunner {
                     }
                     
                     this.db.run(
-                        'INSERT INTO migrations (version) VALUES (?)', 
-                        [migration.version], 
+                        'INSERT INTO migrations (version, applied_at) VALUES (?, ?)', 
+                        [migration.version, Math.floor(Date.now() / 1000)], 
                         (err) => {
                             if (err) {
                                 this.db.run('ROLLBACK');
