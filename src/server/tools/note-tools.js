@@ -1,7 +1,7 @@
 export function createNoteTools(db) {
     return [
         {
-            name: 'anki.add_note',
+            name: 'anki_add_note',
             description: 'Add a new note to a deck',
             mutating: true,
             inputSchema: {
@@ -74,7 +74,7 @@ export function createNoteTools(db) {
             }
         },
         {
-            name: 'anki.generate_cards_for_note',
+            name: 'anki_generate_cards_for_note',
             description: 'Generate cards for a note based on its model',
             mutating: true,
             inputSchema: {

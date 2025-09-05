@@ -1,7 +1,7 @@
 export function createDeckTools(db) {
     return [
         {
-            name: 'anki.create_deck',
+            name: 'anki_create_deck',
             description: 'Create a new deck with optional parent and configuration',
             mutating: true,
             inputSchema: {
@@ -72,7 +72,7 @@ export function createDeckTools(db) {
             }
         },
         {
-            name: 'anki.list_decks',
+            name: 'anki_list_decks',
             description: 'List all decks with optional hierarchical structure',
             mutating: false,
             inputSchema: {

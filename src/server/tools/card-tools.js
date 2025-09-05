@@ -3,7 +3,7 @@ import { getDaysSinceEpoch, getEpochDayFromDate } from '../../utils/date-utils.j
 export function createCardTools(db) {
     return [
         {
-            name: 'anki.get_next_card',
+            name: 'anki_get_next_card',
             description: 'Get the next card to review from a deck',
             mutating: false,
             inputSchema: {
@@ -90,7 +90,7 @@ export function createCardTools(db) {
             }
         },
         {
-            name: 'anki.answer_card',
+            name: 'anki_answer_card',
             description: 'Answer a card with a rating (1=Again, 2=Hard, 3=Good, 4=Easy)',
             mutating: true,
             inputSchema: {
@@ -200,7 +200,7 @@ export function createCardTools(db) {
             }
         },
         {
-            name: 'anki.card_info',
+            name: 'anki_card_info',
             description: 'Get detailed information about a card',
             mutating: false,
             inputSchema: {
